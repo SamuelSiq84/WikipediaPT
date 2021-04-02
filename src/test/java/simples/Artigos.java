@@ -41,7 +41,8 @@ public class Artigos {
 
         //pesquisar por "Ovo de Páscoa"
         driver.findElement(By.id("searchInput")).sendKeys("Ovo de Páscoa");
-        driver.findElement(By.id("searchButton")).click(); // clica na lupa
+        driver.findElement(By.xpath("//*[@id='searchform']/button")).click();
+        //driver.findElement(By.id("searchButton")).click(); // clica na lupa
 
         //validar o título da página
 
